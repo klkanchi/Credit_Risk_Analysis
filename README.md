@@ -27,4 +27,20 @@ The following results are presented in ascending levels of performance, based on
 Cluster Centroids **Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at accurately predicting credit risks.
 
 
+**Balanced Random Forest Classifier** gave us the second-best results, showing marked improvement with an accuracy score of 0.7615. However, this is still far from perfect. This means that it could only accurately predict about 76%, or 3/4ths of the appropriate levels of credit risks.
+
+![BalancedRandomForestClassifier1.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/BalancedRandomForestClassifier1.png)
+
+It's F-scores were where there was most improvement (relatively). The BRFC model achieved an average F-score of 0.93, which is at least in the 90's. However, it's F-score for high-risk prediction was still low, at only 0.06.
+
+![BalancedRandomForestClassifier2.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/BalancedRandomForestClassifier2.png)
+
+**Easy Ensemble AdaBoost Classifier** was the best-performing model, hands-down. It's results were leagues beyond all other models attempted. It gave us an accuracy score of 0.9319. While not perfect, this means that it could accurately predict at a rate greater than 93% of the appropriate levels of credit risks.
+
+It's F-scores were also fairly impressive. The EEC model achieved an average F-score of 0.97. However, while the best performing, it's F-score for high-risk prediction was still low, at only 0.16.
+
+![EasyEnsembleAdaBoostClassifier.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/EasyEnsembleAdaBoostClassifier.png)
+
+Summary
+In conclusion, credit-risk is a difficult thing to predict, even for advanced machine learning algorithms with 93 columns of data to process. While the Easy Ensemble AdaBoost Classifier model had the highest overall accuracy, this was largely due to the fact that the dataset was so radically unbalanced. Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
 
