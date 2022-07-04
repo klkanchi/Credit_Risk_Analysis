@@ -65,6 +65,6 @@ It's F-scores were also fairly impressive. The EEC model achieved an average F-s
 
 ![EasyEnsembleAdaBoostClassifier.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/EasyEnsembleAdaBoostClassifier.png)
 
-Summary
+## Summary
 In conclusion, credit-risk is a difficult thing to predict, even for advanced machine learning algorithms with 93 columns of data to process. While the Easy Ensemble AdaBoost Classifier model had the highest overall accuracy, this was largely due to the fact that the dataset was so radically unbalanced. Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
 
