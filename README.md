@@ -21,11 +21,11 @@ The models were run and then evaluated for performance and accuracy at predictin
 
 Credit risk analysis using *scikit-learn* and *imbalanced-learn* on sample credit data.
 
-In examining the results we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals.
+In examining the results we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two numbers from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals.
 
 The following results are presented in ascending levels of performance, based on their Balanced Accuracy Scores, starting with the worst-performing model and moving to the best.
 
-Cluster Centroids **Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at accurately predicting credit risks.
+**Cluster Centroids Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at accurately predicting credit risks.
 It's F-scores were similarly disappointing, achieving an average of only 0.57 and an F-score for high-risk prediction of only 0.01.
 
 ![Undersampling_report.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/Undersampling_report.png)
@@ -41,7 +41,7 @@ It's F-scores showed were also disappointing, achieving only a marginally improv
 
 ![combined_sampling.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/combined_sampling.png)
 
-**Naive Random Oversampling** brings us to the midway point in our model performances. The ROS model gave us the third-best results, with an accuracy score of 0.6732. This is still about the same performance we saw from Combination Sampling and SMOTE Oversampling. This means that it did little better than 67%, or 2/3rds accuracy at predicting credit risks.
+**Naive Random Oversampling** brings us to the midway point in our model performances. The ROS model gave us the third-best results, with an accuracy score of 0.6795. This is still about the same performance we saw from Combination Sampling and SMOTE Oversampling. This means that it did little better than 67%, or 2/3rds accuracy at predicting credit risks.
 
 ![undersampling.png](https://github.com/klkanchi/Credit_Risk_Analysis/blob/main/images/undersampling.png)
 
